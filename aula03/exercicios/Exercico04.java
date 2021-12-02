@@ -14,15 +14,15 @@ public class Exercico04 {
 
         System.out.println("informa kw consumidos");
         kwConsumida = entrada.nextDouble();
-
+        valorKW = salarioMinimo / TAXA_POR_KW;
         valorTotal = valorKW * kwConsumida;
 
-        valorKW = salarioMinimo / TAXA_POR_KW;
+        
 
         valorComDesconto = valorTotal - valorTotal * 0.15;
         
 
-        System.out.println("Valor a ser pago com desconto é " + valorTotal);
+        System.out.println("Valor a ser pago " + valorTotal);
         System.out.println("1 Kw custa " + valorKW);
         System.out.println("Valor com 15% de desconto: " + valorComDesconto);
 
